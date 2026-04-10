@@ -1,8 +1,8 @@
-pub struct FelidServer {
+pub struct GelidServer {
     pub network_profile: NetworkProfile
 }
 
-impl FelidServer {
+impl GelidServer {
     pub fn new(network_profile: NetworkProfile) -> Self {
         Self { network_profile }
     }

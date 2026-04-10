@@ -1,6 +1,6 @@
 use serde::Deserialize;
 use std::fs;
-use crate::server::FelidServer;
+use crate::server::GelidServer;
 
 mod server;
 
@@ -10,7 +10,7 @@ fn main() {
     println!("Starting server at {}:{}", config.server_ip, config.port);
 
     let network_profile = server::NetworkProfile::new(config.server_ip, config.port);
-    let server: FelidServer = FelidServer::new(network_profile);
+    let server: GelidServer = GelidServer::new(network_profile);
 
     
 }
